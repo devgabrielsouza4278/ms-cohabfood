@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   db:
-    image: mysql:8.0.33
+    image: mysql:oracle
     container_name: banco_mysql
     volumes:
       - ./:/home
