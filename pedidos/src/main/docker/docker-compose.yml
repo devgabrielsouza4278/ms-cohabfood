@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+  db:
+    image: mysql:8.0.33
+    container_name: banco_mysql
+    volumes:
+      - ./:/home
+
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_DATABASE: 'teste'
+      MYSQL_USER: 'teste1'
+      MYSQL_PASSWORD: 'teste1'
+      MYSQL_ROOT_PASSWORD: 'teste2'
